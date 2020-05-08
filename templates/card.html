@@ -7,7 +7,9 @@
 <body>
 <h1>Flask Card Here</h1>
 
-<p>Question: {{ data.question}}</p>
-<p>Answer: {{ data.answer}}</p>
+{% for recod in data %}
+<p>Question: {{ recod.question}}</p>
+<p>Answer: {{ recod.answer}}</p>
+{% endfor %}
 </body>
 </html>

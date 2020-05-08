@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from flask import Flask, render_template
+from flask import Flask, render_template, jsonify
 
 from model import db
 
@@ -15,8 +15,9 @@ def home():
 
 @app.route('/card')
 def card():
-    data = db[0]
-    return render_template('card.html', data=data)
+    data = db
+    return jsonify({"data": data})
+    # return render_template("card.html", data=data)
 
 
 @app.route('/date')
@@ -32,3 +33,6 @@ def count_views():
     global counter
     counter += 1
     return "This page was served " + str(counter) + "times"
+
+
+app.run(debug=True)
