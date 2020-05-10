@@ -1,8 +1,22 @@
 [{
-  "question": "What is your name?",
-  "answer": "my name is Alvin"
+  "question1": "What is your name?",
+  "answer1": "my name is Alvin",
+  "question2": "What's your age?",
+  "answer2": "My age 25",
+  "level": "LOW"
 },
 {
-  "question": "What is your age?",
-  "answer": "my age 24!"
-}]
+  "question1": "What is your age?",
+  "answer1": "my age 24!",
+  "question2": "What's your age?",
+  "answer2": "My age 25",
+  "level": "HIGH"
+},
+{
+  "question1": "What is your age?",
+  "answer1": "my age 24!",
+  "question2": "What's your age?",
+  "answer2": "My age 25",
+  "level": "NEW"
+}
+]
